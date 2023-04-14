@@ -1,8 +1,12 @@
 import HeaderMenu from '@/widgets/HeaderMenu';
 import { GetStaticPaths,GetStaticProps } from 'next';
-import { PropsWithChildren } from 'react';
+import React, { PropsWithChildren } from 'react';
 
-const MainLayout = ({ children }: PropsWithChildren) => {
+type Props = {
+  children?: React.ReactNode
+}
+
+const MainLayout = ({children}: Props) => {
   return (
     <div className='flex flex-col justify-center items-center w-[1440px]'>
       <HeaderMenu />
