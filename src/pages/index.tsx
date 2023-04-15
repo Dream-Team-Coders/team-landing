@@ -5,7 +5,7 @@ export default function Home() {
         <main className='flex flex-col items-center'>
             <MainLayout>
                 <div>
-          CONTENT
+					CONTENT
                 </div>
             </MainLayout>
         </main>
