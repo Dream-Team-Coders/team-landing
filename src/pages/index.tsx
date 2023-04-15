@@ -38,5 +38,5 @@ export default function Home() {
                 </section>
             </MainLayout>
         </main>
-    )   
+    )
 }
