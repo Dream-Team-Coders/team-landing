@@ -15,6 +15,6 @@ module.exports = {
         'links-blue': '#036FC7'
       },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
