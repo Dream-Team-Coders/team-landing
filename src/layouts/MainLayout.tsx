@@ -7,27 +7,27 @@ type Props = {
 }
 
 const MainLayout = ({ children }: Props) => { 
-  return (
-    <div className='flex flex-col justify-center items-center w-[1440px]'>
-      <HeaderMenu />
-      {children}
-    </div>
-  )
+    return (
+        <div className='flex flex-col justify-center items-center w-[1440px]'>
+            <HeaderMenu />
+            {children}
+        </div>
+    )
 }
 
 export const getStaticPaths: GetStaticPaths = () => {
-  return {
-    paths:[],
-    fallback:false
-  }
+    return {
+        paths:[],
+        fallback:false
+    }
 }
 
 export const getStaticProps: GetStaticProps = async () =>{
-  return {
-    props:{
+    return {
+        props:{
 
+        }
     }
-  }
 }
 
 export default MainLayout
