@@ -21,6 +21,9 @@
 		"padded-blocks": ["error", "never"],
 		"no-duplicate-imports": "error",
 		"sort-imports": ["error", { "memberSyntaxSortOrder": ["none", "all", "single", "multiple"] }],
+		"comma-spacing": ["error", { "before": false, "after": true }],
+		"array-bracket-spacing": ["error", "never"],
+		"object-curly-spacing": ["error", "always", { "arraysInObjects": false }],
 		"no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
 		"no-multi-spaces": "error",
 		"newline-per-chained-call": ["error", { "ignoreChainWithDepth": 1 }]

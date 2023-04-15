@@ -1,4 +1,4 @@
-import { GetStaticPaths,GetStaticProps } from 'next'
+import { GetStaticPaths, GetStaticProps } from 'next'
 
 const HeaderMenu = () => {
     return (
