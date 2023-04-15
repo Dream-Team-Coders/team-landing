@@ -4,11 +4,11 @@ type props = {
   isActive?: boolean
 };
 
-const HeaderLink = ({title, href, isActive}: props) => {
+const HeaderLink = ({ title, isActive }: props) => {
     return (
-      <button className={`text-base ${isActive && 'text-links-blue'}`}>
-        {title}
-      </button>
+        <button className={`text-base ${isActive && 'text-links-blue'}`}>
+            {title}
+        </button>
     )
 }
 

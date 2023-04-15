@@ -3,11 +3,13 @@ type props = {
   isDark?: boolean
 };
 
-const Button = ({title, isDark}: props) => {
+const Button = ({ title, isDark }: props) => {
     return (
-      <button className={`w-fit h-fit text-base py-2 px-5 rounded ${isDark ? 'bg-btns-dark text-white' : 'border border-btns-light'}`}>
-        {title}
-      </button>
+        <button className={`w-fit h-fit text-base py-2 px-5 rounded ${isDark
+            ? 'bg-btns-dark text-white'
+            : 'border border-btns-light'}`}>
+            {title}
+        </button>
     )
 }
 
