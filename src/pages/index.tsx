@@ -1,8 +1,8 @@
-import MainLayout from "@/layouts/MainLayout";
+import MainLayout from '@/layouts/MainLayout'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center">
+    <main className='flex flex-col items-center'>
       <MainLayout>
         <div>
           CONTENT

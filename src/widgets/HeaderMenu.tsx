@@ -1,24 +1,21 @@
-import { GetStaticPaths,GetStaticProps } from 'next';
+import { GetStaticPaths,GetStaticProps } from 'next'
 
 const HeaderMenu = () => {
   return (
     <div>
       Header Menu
     </div>
-  );
+  )
 }
 
 export const getStaticPaths: GetStaticPaths = () => {
-
-
   return {
     paths:[],
     fallback:false
   }
 }
-export const getStaticProps: GetStaticProps = async (ctx) =>{
 
-
+export const getStaticProps: GetStaticProps = async () =>{
   return {
     props:{
 
@@ -26,4 +23,4 @@ export const getStaticProps: GetStaticProps = async (ctx) =>{
   }
 }
 
-export default HeaderMenu;
+export default HeaderMenu
