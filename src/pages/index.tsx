@@ -3,10 +3,10 @@ import BgIcon2 from '../../public/bg-icon-2.svg'
 import ChartIcon from '../../public/chart-icon.svg'
 import HardhatIcon from '../../public/hardhat-icon.svg'
 import ItemBlock from '@/components/ItemBlock'
-import { NextPageWithLayout } from './_app'
+import { PageWithLayout } from '@/types/PageWithLayout'
 import RecyclingIcon from '../../public/recycling-icon.svg'
 
-const Home: NextPageWithLayout = () => {
+const Home: PageWithLayout = () => {
     return (
         <div className='flex flex-col items-center'>
             <section>
