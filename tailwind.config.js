@@ -9,10 +9,15 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                'inter': 'Inter'
+            },
             colors: {
                 'btns-dark': '#212B31',
                 'btns-light': '#DADEDF',
-                'links-blue': '#036FC7'
+                'links-blue': '#036FC7',
+                'black': '#212B31',
+                'gray': '#72787D'
             },
         },
         plugins: [],
