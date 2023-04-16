@@ -8,10 +8,12 @@ type Props = {
 
 const MainLayout = ({ children }: Props) => { 
     return (
-        <div className='flex flex-col justify-center items-center w-[1440px]'>
-            <HeaderMenu />
-            <div className='flex flex-col justify-center items-center w-[1056px]'>
-                {children}
+        <div className='flex flex-col items-center'>
+            <div className='flex flex-col justify-center items-center w-[1440px]'>
+                <HeaderMenu />
+                <div className='flex flex-col justify-center items-center w-[1056px]'>
+                    {children}
+                </div>
             </div>
         </div>
     )
