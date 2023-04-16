@@ -1,7 +1,7 @@
 import Button from '@/components/Button'
 import HeaderLink from '@/components/HeaderLink'
 import Image from 'next/image'
-import Logo from '../../public/icons/logo.svg'
+import Logo from '%/icons/logo.svg'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
 const HeaderMenu = () => {
