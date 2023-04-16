@@ -1,7 +1,7 @@
 import Button from '@/components/Button'
 import HeaderLink from '@/components/HeaderLink'
 import Image from 'next/image'
-import Logo from '../../public/logo.svg'
+import Logo from '%/icons/logo.svg'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
 const HeaderMenu = () => {
@@ -9,7 +9,7 @@ const HeaderMenu = () => {
         <div className='flex justify-between items-center w-full h-24 px-8'>
             <div className='flex items-center uppercase font w-fit'>
                 <Image className='mr-4' src={Logo} alt='Logo' />
-                <span className='text-2xl font-sans'>СтройКонтроль</span>
+                <span className='text-2xl font-inter'>СтройКонтроль</span>
             </div>
             <div className='flex items-center gap-x-5'>
                 <HeaderLink title='Главная' isActive />

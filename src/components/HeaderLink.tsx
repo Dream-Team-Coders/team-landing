@@ -6,7 +6,7 @@ type props = {
 
 const HeaderLink = ({ title, isActive }: props) => {
     return (
-        <button className={`text-base ${isActive && 'text-links-blue'}`}>
+        <button className={`font-inter text-base ${isActive && 'text-links-blue'}`}>
             {title}
         </button>
     )
