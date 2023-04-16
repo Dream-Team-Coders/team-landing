@@ -24,7 +24,7 @@ const ItemBlock = ({ iconBackground, icon, title, description, reverseBg = false
                     alt='icon' />
             </div>
             <div className='flex flex-col justify-start items-center gap-y-[10px]'>
-                <div className='text-center text-lg text-black'>
+                <div className='text-center break-words font-inter text-lg text-black'>
                     {title}
                 </div>
                 <div className='text-center break-words font-inter text-base text-gray'>

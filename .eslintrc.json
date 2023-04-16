@@ -1,8 +1,11 @@
 {
 	"extends": "next/core-web-vitals",
 	"rules": {
-		"no-unused-vars": "error",
+		"prefer-const": ["error"],
+		"no-unused-vars": ["error", { "args": "none" }],
 		"no-var": "error",
+		"prefer-arrow-callback": ["error", { "allowNamedFunctions": false, "allowUnboundThis": false }],
+		"prefer-destructuring": ["error", { "array": false, "object": true }, { "enforceForRenamedProperties": false }],
 		"multiline-ternary": ["error", "always"],
 		"no-else-return": ["error", { "allowElseIf": false }],
 		"quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
