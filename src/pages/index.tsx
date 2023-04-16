@@ -7,10 +7,11 @@ import HardhatIcon from '../../public/icons/hardhat-icon.svg'
 import Image from 'next/image'
 import ItemBlock from '@/components/ItemBlock'
 import MainLayout from '@/layouts/MainLayout'
+import { PageWithLayout } from '@/types/PageWithLayout'
 import RecyclingIcon from '../../public/icons/recycling-icon.svg'
 import Transport from '../../public/images/section-1-2.png'
 
-export default function Home() {
+const Home: PageWithLayout = () => {
     return (
         <main className='flex flex-col items-center'>
             <MainLayout>
@@ -58,3 +59,5 @@ export default function Home() {
         </main>
     )
 }
+
+export default Home
