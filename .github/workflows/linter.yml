@@ -1,17 +1,31 @@
 name: Lint
 
 on:
-  # Trigger the workflow on push or pull request,
   push:
     branches:
       - main
   pull_request:
 
 jobs:
-  eslint:
+    run-linters:
+    name: Run linters
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
-      - uses: stefanoeb/eslint-action@1.0.2
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Read .nvmrc
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+        id: nvm
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
         with:
-          files: src/
+          node-version: "${{ steps.nvm.outputs.NVMRC }}"
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run eslint
+        run: npx eslint ./src
