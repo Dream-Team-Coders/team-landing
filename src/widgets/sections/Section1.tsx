@@ -6,9 +6,9 @@ import Transport from '%/images/section-1-2.png'
 export const Section1 = () => {
     return (
         <section className='w-full flex flex-col items-center justify-center mt-[74px]'>
-            <span className='font-inter text-5xl max-w-[820px] text-center'>
+            <h1 className='font-inter text-5xl max-w-[820px] text-center'>
                 Умная доставка материалов для сложных строительных площадок
-            </span>
+            </h1>
             <div className='flex flex-row mt-8 gap-x-4'>
                 <Button
                     title='Заказать демо'
