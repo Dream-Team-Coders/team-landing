@@ -1,4 +1,4 @@
-name: Lint
+name: Eslint check
 
 on:
   push:
@@ -7,25 +7,25 @@ on:
   pull_request:
 
 jobs:
-    run-linters:
-    name: Run linters
-    runs-on: ubuntu-latest
+    run-eslint:
+      name: Run eslint
+      runs-on: ubuntu-latest
 
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
+      steps:
+        - name: Check out Git repository
+          uses: actions/checkout@v2
 
-      - name: Read .nvmrc
-        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
-        id: nvm
+        - name: Read .nvmrc
+          run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+          id: nvm
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: "${{ steps.nvm.outputs.NVMRC }}"
+        - name: Set up Node.js
+          uses: actions/setup-node@v1
+          with:
+            node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
-      - name: Install Node.js dependencies
-        run: npm ci
+        - name: Install Node.js dependencies
+          run: npm ci
 
-      - name: Run eslint
-        run: npx eslint ./src
+        - name: Linter check
+          run: npx eslint ./src
