@@ -4,7 +4,7 @@ import Questions from '%/images/section-3-1.png'
 export const Section3 = () => {
     return (
         <section className='mt-36 flex flex-col items-center'>
-            <h2 className='font-inter text-3xl'>
+            <h2 className='font-inter text-3xl text-black'>
                 Строительство - это хаос
             </h2>
             <div className='mt-4 text-center break-words font-inter text-xl text-gray'>
