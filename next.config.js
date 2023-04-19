@@ -4,9 +4,11 @@ const config = {
     reactStrictMode: true
 }
 
-if (isGithubActions)
+if (isGithubActions) {
+    config.output = 'export'
     config.images = {
         unoptimized: true
     }
+}
 
 module.exports = config
