@@ -8,7 +8,7 @@ import SkanskaLogo from '%/images/section-6-6.png'
 
 export const Section6 = () => {
     return (
-        <section className='w-full mt-32 flex flex-col items-center'>
+        <section className='w-full mt-32 flex flex-col items-center gap-y-3'>
             <div className='w-full items-center flex flex-row justify-between'>
                 <Image
                     className='w-[180px]'
@@ -37,7 +37,7 @@ export const Section6 = () => {
                 />
             </div>
             <Image
-                className='w-[180px] mt-3'
+                className='w-[180px]'
                 src={SkanskaLogo}
                 alt='SkanskaLogo'
             />
