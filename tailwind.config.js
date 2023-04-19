@@ -17,7 +17,8 @@ module.exports = {
                 'btns-light': '#DADEDF',
                 'links-blue': '#036FC7',
                 'black': '#212B31',
-                'gray': '#72787D'
+                'gray': '#72787D',
+                'mustard': '#FFD042'
             },
         },
         plugins: [],
