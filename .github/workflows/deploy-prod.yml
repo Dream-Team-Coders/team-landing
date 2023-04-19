@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: curent
+          node-version: current
           cache: npm
       - name: Setup Pages
         uses: actions/configure-pages@v3
