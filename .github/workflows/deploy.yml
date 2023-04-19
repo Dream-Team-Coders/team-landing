@@ -30,5 +30,4 @@ jobs:
         with:
           branch: gh-pages
           folder: out
-          force: false
           clean-exclude: pr-preview/
