@@ -9,7 +9,7 @@ on:
       - closed
 
 permissions:
-  contents: read|write
+  contents: read
 
 concurrency: preview-${{ github.ref }}
 
