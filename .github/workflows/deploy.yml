@@ -19,10 +19,11 @@ jobs:
         run: |
           npm ci
           npm run build
+          npx next export
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: .next
+          folder: .out
           force: false
           clean-exclude: pr-preview/
