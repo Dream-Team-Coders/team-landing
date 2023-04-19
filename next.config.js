@@ -1,14 +1,8 @@
 /** @type {import('next').NextConfig} */
-const isGithubActions = process.env.GITHUB_ACTIONS ?? false
-const config = {
-    reactStrictMode: true
-}
-
-if (isGithubActions) {
-    config.output = 'export'
-    config.images = {
+module.exports = {
+    reactStrictMode: true,
+    output: 'export',
+    images: {
         unoptimized: true
     }
 }
-
-module.exports = config

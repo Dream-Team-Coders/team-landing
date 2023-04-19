@@ -23,6 +23,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          branch: gh-pages
           folder: out
           force: false
           clean-exclude: pr-preview/
