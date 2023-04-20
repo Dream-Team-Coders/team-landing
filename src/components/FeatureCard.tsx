@@ -9,9 +9,9 @@ type props = {
 
 const FeatureCard = ({ title, description, image, isReversed }: props) => {
     return (
-        <div className='flex felx-col'>
-            <div className='flex flex-col gap-y-5' >
-                <div className='font-inter text-black text-[18px] leading-[24px]'>
+        <div className={`${isReversed && 'flex-row-reverse'} flex justify-between`}>
+            <div className='flex flex-col gap-y-5 justify-center' >
+                <div className='font-inter text-black text-[18px] leading-[24px] max-w-[500px]'>
                     {title}
                 </div>
                 <div className='font-inter text-gray text-[16px] leading-[24px] max-w-[500px]'>
