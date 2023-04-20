@@ -18,7 +18,10 @@ module.exports = {
                 'links-blue': '#036FC7',
                 'black': '#212B31',
                 'gray': '#72787D',
-                'mustard': '#FFD042'
+                'mustard': '#FFD042',
+                'blue': '#036FC7',
+                'light-blue': '#E6F1F9',
+                'yellow': '#FFDD76'
             },
         },
         plugins: [],
