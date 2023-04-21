@@ -13,7 +13,9 @@ const Section5 = () => {
                     Мы знаем всё о гордости от сияющего нового здания. Нам также известно всё о
                     разочаровании от попыток завершить проект в срок и в рамках бюджета.
                 </div>
-                <HighlightedText>Мы здесь, чтобы помочь.</HighlightedText>
+                <HighlightedText className='font-inter text-xl leading-8 text-black'>
+                    Мы здесь, чтобы помочь.
+                </HighlightedText>
             </div>
             <Image className='block h-[400px]' src={Pic1} alt='Picture'/>
         </section>
