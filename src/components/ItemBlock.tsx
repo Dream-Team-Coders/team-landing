@@ -1,33 +1,37 @@
+import { ReactElement } from 'react'
+import SvgProps from '@/types/SvgProps'
 import Image, { StaticImageData } from 'next/image'
 
 type props = {
-    iconBackground: StaticImageData
     icon: StaticImageData
+    iconBackground: ReactElement<SvgProps>
     title: string
     description: string
-    reverseBg?: boolean
+    iconAside?: boolean
 };
 
-const ItemBlock = ({ iconBackground, icon, title, description, reverseBg = false }: props) => {
+const ItemBlock = ({ icon, iconBackground, title, description, iconAside = false }: props) => {
     return (
-        <div className='flex flex-col justify-start items-center gap-y-[20px] w-[325px]'>
+        <div className={`flex justify-start gap-y-[20px] gap-x-[16px]
+            ${!iconAside ?
+            'flex-col w-[325px] items-center' :
+            'w-[334px] gap-x-[16px]'}`}
+        >
             <div className='relative h-12 w-12 overflow-hidden'>
-                <Image
-                    className={`${reverseBg &&
-                        '-scale-x-100'}`}
-                    src={iconBackground}
-                    alt='icon-bg' />
+                {iconBackground}
                 <Image
                     className='absolute top-1/2 left-1/2 
                         -translate-x-1/2 -translate-y-1/2'
                     src={icon}
                     alt='icon' />
             </div>
-            <div className='flex flex-col justify-start items-center gap-y-[10px]'>
-                <div className='text-center break-words font-inter text-lg text-black'>
+            <div className={`flex flex-col justify-start items-center gap-y-[10px] text-center
+                ${iconAside && 'w-[270px] text-start'}`}
+            >
+                <div className='w-full break-words font-inter text-lg text-black'>
                     {title}
                 </div>
-                <div className='text-center break-words font-inter text-base text-gray'>
+                <div className={`w-full break-words font-inter text-base text-gray`}>
                     {description}
                 </div>
             </div>

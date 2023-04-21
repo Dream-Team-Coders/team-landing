@@ -1,6 +1,6 @@
 {
 	"extends": "next/core-web-vitals",
-	"ignorePatterns": [".next/", "out/"],
+	"ignorePatterns": [".next/", "out/", "src/svgs/"],
 	"rules": {
 		"prefer-const": ["error"],
 		"no-unused-vars": ["error", { "args": "none" }],
