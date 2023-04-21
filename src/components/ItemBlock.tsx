@@ -10,12 +10,7 @@ type props = {
     iconAside?: boolean
 };
 
-const ItemBlock = ({
-    icon,
-    iconBackground,
-    title,
-    description,
-    iconAside = false }: props) => {
+const ItemBlock = ({ icon, iconBackground, title, description, iconAside = false }: props) => {
     return (
         <div className={`flex justify-start gap-y-[20px] gap-x-[16px]
             ${!iconAside ?
