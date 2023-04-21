@@ -29,7 +29,7 @@ const Section9 = () => {
                 выполняют свои обязанности перед гражданами, инвесторы получают сертификаты
                 своих проектов, а генеральные подрядчики получают повышенную репутацию.
             </div>
-            <div className='mt-12 w-full flex flex-row justify-between'>
+            <div className='mt-12 w-full flex flex-row gap-x-[33px]'>
                 <ItemBlock
                     icon={CO2}
                     iconBackground={<IconBg1 className='fill-light-green' />}
