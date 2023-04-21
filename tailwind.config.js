@@ -21,7 +21,9 @@ module.exports = {
                 'mustard': '#FFD042',
                 'blue': '#036FC7',
                 'light-blue': '#E6F1F9',
-                'yellow': '#FFDD76'
+                'yellow': '#FFDD76',
+                'green': '#3A8241',
+                'light-green': '#E2F9C3'
             },
         },
         plugins: [],

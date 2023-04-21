@@ -7,6 +7,7 @@ import Section5 from '@/widgets/sections/Section5'
 import { Section6 } from '@/widgets/sections/Section6'
 import { Section7 } from '@/widgets/sections/Section7'
 import Section8 from '@/widgets/sections/Section8'
+import Section9 from '@/widgets/sections/Section9'
 
 const Home: PageWithLayout = () => {
     return (
@@ -19,6 +20,7 @@ const Home: PageWithLayout = () => {
             <Section6 />
             <Section7 />
             <Section8 />
+            <Section9 />
         </div >
     )
 }

@@ -1,9 +1,9 @@
-import ChartIcon from '%/icons/chart-icon.svg'
-import HardhatIcon from '%/icons/hardhat-icon.svg'
+import ChartIcon from '%/icons/chart.svg'
+import HardhatIcon from '%/icons/hardhat.svg'
 import IconBg1 from '@/svgs/IconBg1'
 import IconBg2 from '@/svgs/IconBg2'
 import ItemBlock from '@/components/ItemBlock'
-import RecyclingIcon from '%/icons/recycling-icon.svg'
+import RecyclingIcon from '%/icons/recycling.svg'
 
 export const Section2 = () => {
     return (
