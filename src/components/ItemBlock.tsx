@@ -7,10 +7,19 @@ type props = {
     iconBackground: ReactElement<SvgProps>
     title: string
     description: string
+    titleStyle?: string
+    descriptionStyle?: string
     iconAside?: boolean
 };
 
-const ItemBlock = ({ icon, iconBackground, title, description, iconAside = false }: props) => {
+const ItemBlock = ({
+    icon,
+    iconBackground,
+    title,
+    description,
+    titleStyle = 'text-black',
+    descriptionStyle = 'text-gray',
+    iconAside = false }: props) => {
     return (
         <div className={`flex justify-start gap-y-[20px] gap-x-[16px]
             ${!iconAside ?
@@ -28,10 +37,10 @@ const ItemBlock = ({ icon, iconBackground, title, description, iconAside = false
             <div className={`flex flex-col justify-start items-center gap-y-[10px] text-center
                 ${iconAside && 'w-[270px] text-start'}`}
             >
-                <div className='w-full break-words font-inter text-lg text-black'>
+                <div className={`w-full break-words font-inter text-lg ${titleStyle}`}>
                     {title}
                 </div>
-                <div className={`w-full break-words font-inter text-base text-gray`}>
+                <div className={`w-full break-words font-inter text-base ${descriptionStyle}`}>
                     {description}
                 </div>
             </div>

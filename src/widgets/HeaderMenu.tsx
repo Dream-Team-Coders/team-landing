@@ -6,7 +6,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 
 const HeaderMenu = () => {
     return (
-        <div className='flex justify-between items-center w-full h-24 px-8'>
+        <header className='flex justify-between items-center w-[1440px] h-24 px-8'>
             <div className='flex items-center uppercase font w-fit'>
                 <Image className='mr-4' src={Logo} alt='Logo' />
                 <span className='text-2xl font-inter'>СтройКонтроль</span>
@@ -21,7 +21,7 @@ const HeaderMenu = () => {
                 <HeaderLink title='Связаться с нами' />
                 <Button title='Заказать демо' isDark/>
             </div>
-        </div>
+        </header>
     )
 }
 

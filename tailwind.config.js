@@ -16,6 +16,7 @@ module.exports = {
                 'btns-dark': '#212B31',
                 'btns-light': '#DADEDF',
                 'links-blue': '#036FC7',
+                'white-a-0.75': 'rgba(255, 255, 255, 0.75)',
                 'black': '#212B31',
                 'gray': '#72787D',
                 'mustard': '#FFD042',
